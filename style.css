@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgh@300;400;500;600;700;800;900&display=swap');
+
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    font-family: 'Poppins', sans-serif;
+    /*border: 1px solid rebeccapurple;*/
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+.box{
+    width: 605px;
+    height: 360px;
+    /*border: 1px solid red;*/
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,coral,orange);
+    display: flex;
+    /*justify-content: flex-start; |.content er vitor dileo hobe*/
+    align-items: center;
+    position: absolute;
+    box-shadow: 0px 10px 25px black;
+}
+.box:hover{
+    box-shadow: 8px 15px 25px orangered;
+    background-image: linear-gradient(130deg,coral, salmon,orange);
+}
+.box img{
+    position: absolute;
+    height: 400px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.box:hover img{
+    left: 85%;
+    height: 500px;
+}
+.content{
+    width: 50%;
+    left: 30%;
+    position: relative;
+    justify-content: flex-start;
+    visibility: hidden;
+    transition: 0.7s;
+    opacity: 0;
+    padding: 10px 15px 25px 30px;
+
+}
+.box:hover .content{
+    visibility: visible;
+    opacity: 1;
+    left:0%;
+}
+.content h2{
+    color: seashell;
+    font-size: 35px;
+    line-height: 35px;
+}
+.name-heighlight{
+    color: whitesmoke;
+    text-shadow:2px 2px 5px red, 2px 2px 5px orangered;
+    animation: akif 3s infinite;
+}
+@keyframes akif{
+    40% {text-shadow: 8px 15px 20px black;} 
+}
+.content p{
+    color: yellow;
+}
+.Click-button{
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    /*position: relative;*/
+    background-image: linear-gradient(45deg, tomato, red);
+    float: inline-end;
+}
+.Click-button:hover{
+    box-shadow: 5px 5px 15px red;
+    font-weight: 700;
+}
